@@ -1,0 +1,693 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px; 
+    background-color: #021e42;
+} 
+
+/* ------------------menu (index)------------------ */
+
+#instructions {
+    margin: 5%
+
+}
+
+
+
+.middle {
+    display: grid;
+    width: 80%;
+    max-width: 500px;
+    height: 80%;
+    place-items: center;
+    background-color: #004AAD;
+    border-radius: 20px;
+    padding: 1%;
+    margin: 0 auto;
+    margin-top: 2%;
+    border: 2px solid #FFDE59;
+    font-weight: bold;
+    color: #ffffff;
+
+}
+
+#list {
+    list-style: none;
+    padding: 1;
+    margin: 2%;
+    margin-bottom: 7%;
+  }
+
+  #list li {
+    margin-bottom: 10px; /* Añade margen vertical entre los elementos de la lista */
+  }
+
+  #list label {
+    width: 200px;
+    text-align: left;
+    margin-right: 10px;
+    font-weight: bold;
+  }
+
+  #list input[type="text"] {
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 5px;
+    width:40%;
+    box-sizing: border-box;
+  }
+
+  #buttons {
+    display: flex;
+    margin: 5%;
+    justify-content: space-between;
+
+  }
+
+
+  .menu_button {
+    background-color: #FFDE59;
+    color: #000000;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 5px 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 60px;
+    max-width: 60px;
+    text-align: center;
+    
+}
+
+.menu_button:hover {
+    background-color: #bba342;
+}
+
+.bottom {
+    display: grid;
+    width: 80%;
+    max-width: 500px;
+    height: 80%;
+    place-items: center;
+    background-color: #004AAD;
+    border-radius: 20px;
+    padding: 1%;
+    margin: 0 auto;
+    margin-top: 2%;
+    border: 2px solid #FFDE59;
+    font-weight: bold;
+    color: #ffffff;
+}
+  
+#record {
+    padding-left: 0;
+  }
+  
+  #record li {
+    text-align: left;
+    margin-bottom: 10px;
+  }
+
+
+
+
+
+
+/* ------------------bingo 5x5------------------ */
+
+.section-1 {
+    display: flex;
+    justify-content: space-between;
+    margin: 3%;
+    margin-top: 1%;
+    margin-bottom: 0%;
+    max-height: 250px;
+}
+
+#title {
+    font-size: 80px;
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    color: #ffffff;
+    max-height: 220px;
+}
+
+.bigWord {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    color: #ffffff;
+
+}
+
+.square {
+    width: 100%;
+    height: 40%;
+    border-radius: 8%;
+    background-color: #004AAD;
+    margin-bottom: 10%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.my-button {
+    background-color: #FFDE59;
+    color: #000000;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.my-button:hover {
+    background-color: #bba342;
+}
+
+.section-2 {
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.board {
+    display: grid;
+    width: 80%;
+    max-width: 500px;
+    height: 80%;
+    place-items: center;
+    grid-template-columns: repeat(5, minmax(auto, auto));
+    grid-template-rows: repeat(5, minmax(auto, 80px));
+    gap:3%;
+    background-color: #004AAD;
+    border-radius: 20px;
+    padding: 1.5%;
+    margin: 0 auto;
+  }
+
+  #subtitle {
+    text-align: center;
+    text-align: center;
+    align-items: center;
+    border:1px #000000
+  }
+
+  .box {
+    width: 60px;
+    height: 60px;
+    border-radius: 18px;
+    background-color: #ffffff;
+    display: flex;
+    text-align: center;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid #FFDE59;
+    font-weight: bold;
+  }
+
+  .box_filled {
+    width: 60px;
+    height: 60px;
+    border-radius: 18px;
+    background-color: #FFDE59;
+    display: flex;
+    text-align: center;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid #FFDE59;
+    overflow: hidden;
+    font-weight: bold;
+  }
+  #bonus_box {
+    font-size: 35px;
+
+  }
+
+.section-3 {
+    display: flex;
+    justify-content: space-between;
+    margin: 5%;
+    margin-top: 4%;
+
+}
+.square2 {
+    width: 17%;
+    height: 20%;
+    border-radius: 8%;
+    background-color: #FFDE59;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.my-button2 {
+    background-color: #004AAD;
+    color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 5px 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    margin-bottom: 5%;
+}
+
+.my-button2:hover {
+    background-color: #022d66;
+}
+
+#bottom {
+    display: flex;
+    justify-content: center;
+}
+
+#board1 {
+  display: grid;
+}
+#board2 {
+  display: none;
+}
+#board3 {
+  display: none;
+}
+#board4 {
+  display: none;
+}
+
+#scoreboard{
+  border: 5px solid #FFDE59;
+  padding: 10px;
+  font-weight: bold;
+  display: block;
+  color: #ffffff;
+  padding: 7%;
+  padding-top: 3%;
+}
+
+#scoreboard {
+  display: none;
+}
+
+
+
+/*---------------------------------------4x4-----------------------------------------*/
+.board4x4 {
+  display: grid;
+  width: 30%;
+  max-width: 500px;
+  height: 80%;
+  place-items: center;
+  grid-template-columns: repeat(4, minmax(auto, auto));
+  grid-template-rows: repeat(4, minmax(auto, 80px));
+  gap:2%;
+  background-color: #004AAD;
+  border-radius: 20px;
+  padding: 1.5%;
+  margin: 0 auto;
+}
+
+.box4x4 {
+  width: 60px;
+  height: 60px;
+  border-radius: 18px;
+  background-color: #ffffff;
+  display: flex;
+  text-align: center;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid #FFDE59;
+  font-weight: bold;
+}
+
+.box_filled4x4 {
+  width: 60px;
+  height: 60px;
+  border-radius: 18px;
+  background-color: #FFDE59;
+  display: flex;
+  text-align: center;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid #FFDE59;
+  overflow: hidden;
+  font-weight: bold;
+}
+
+
+/*---------------------------------------3x3-----------------------------------------*/
+
+.board3x3 {
+  display: grid;
+  width: 20%;
+  max-width: 500px;
+  height: 70%;
+  place-items: center;
+  grid-template-columns: repeat(3, minmax(auto, auto));
+  grid-template-rows: repeat(3, minmax(auto, 50px));
+  gap:2%;
+  background-color: #004AAD;
+  border-radius: 20px;
+  padding: 2%;
+  margin: 0 auto;
+}
+
+.box3x3 {
+  width: 80px;
+  height: 80px;
+  border-radius: 18px;
+  background-color: #ffffff;
+  display: flex;
+  text-align: center;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid #FFDE59;
+  font-weight: bold;
+}
+
+.box_filled3x3 {
+  width: 80px;
+  height: 80px;
+  border-radius: 18px;
+  background-color: #FFDE59;
+  display: flex;
+  text-align: center;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid #FFDE59;
+  overflow: hidden;
+  font-weight: bold;
+}
+
+
+
+/* -----------------------MEDIA------------------------*/
+
+@media (max-width: 1450px) {
+  .board3x3 {
+    width: 27%;
+  }
+
+  .box3x3 {
+    width: 75px;
+    height: 75px;
+
+
+}
+
+@media (max-width: 1024px) {
+  .board4x4 {
+    display: grid;
+    width: 50%;
+    max-width: 500px;
+    height: 80%;
+    padding: 1%;
+    margin: 0 auto;
+  }
+  
+  .box4x4 {
+    width: 55px;
+    height: 55px;
+    border-radius: 12px;
+    
+  }
+
+  .box_filled4x4 {
+    width: 55px;
+    height: 55px;
+    border-radius: 12px;
+  }
+
+  .board3x3 {
+    width: 40%;
+
+  }
+}
+
+@media (max-width: 800px) {
+  .box3x3 {
+    width: 55px;
+    height: 55px;
+  }
+
+  .box_filled3x3 {
+
+    width: 55px;
+    height: 55px;
+    }
+  }
+
+}
+
+@media (max-width: 600px) {
+  #title {
+    font-size: 60px;
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    color: #ffffff;
+    max-height: 120px;
+  }
+
+  .middle {
+    display: flex; /* Utilizamos display: flex para crear un contenedor flexible */
+    flex-direction: column; /* Establecemos la dirección del eje principal en columnas */
+    align-items: center; /* Centramos los elementos horizontalmente */
+    gap: 8px; /* Agregamos espacio entre los elementos */
+    font-size: 70%;
+    margin-top: 10%;
+  }
+
+  .menu_button{
+    font-size: 16px;
+    margin-left: 7px;
+    margin-right: 7px;
+    padding: 3px 3px;
+  }
+
+  .bottom{
+    font-size: 80%;
+  }
+
+  #record {
+    font-size: 80%;
+
+  }
+
+  .body {
+    margin: 1%;
+  }
+
+  .bigWord {
+    font-size: 24px;
+  }
+
+  .square {
+    font-size: 30px;
+    width: 100%;
+  }
+
+  .my-button {
+    font-size: 10px;
+    width: 100%;
+    text-align: center;
+    padding: 4px;
+  }
+
+  .square2 {
+    font-size: 70%;
+
+  }
+
+  .board {
+    display: grid;
+    width: 80%;
+    max-width: 500px;
+    height: 80%;
+    place-items: center;
+    grid-template-columns: repeat(5, minmax(auto, auto));
+    grid-template-rows: repeat(5, minmax(auto, 60px));
+    gap:2%;
+    background-color: #004AAD;
+    border-radius: 20px;
+    padding: 2%;
+    margin: 0 auto;
+  }
+
+  .box {
+    width: 40px;
+    height: 40px;
+    gap: 1px;
+    grid-template-rows: repeat(5, minmax(auto, 30px));
+  }
+
+  .box_filled {
+    width: 40px;
+    height: 40px;
+    gap: 1px;
+    grid-template-rows: repeat(5, minmax(auto, 30px));
+
+  }
+
+  .my-button2 {
+    font-size: 8px;
+    width: 80%;
+    text-align: center;
+    padding: 4px;
+  }
+
+  .section-3{
+    margin-top: 7%;
+  }
+
+  .board4x4 {
+    width: 70%;
+  }
+
+  .board3x3 {
+    width: 45%;
+  }
+
+
+  .box3x3 {
+    width: 45px;
+    height: 45px;
+  }
+
+  .box_filled3x3 {
+
+    width: 45px;
+    height: 45px;
+    }
+  
+
+
+}
+@media (max-width: 430px){
+    #title {
+      font-size: 32px;
+    }
+
+    .menu_button{
+      font-size: 12px;
+      margin-left: 7px;
+      margin-right: 7px;
+      padding: 3px 3px;
+    }
+
+    .bigWord {
+      font-size: 18px;
+    }
+  
+    .square {
+      font-size: 24px;
+      width: 100%;
+    }
+  
+    .my-button {
+      font-size: 10px;
+      width: 100%;
+      text-align: center;
+      padding: 4px;
+    }
+
+    .board {
+      display: grid;
+      width: 80%;
+      max-width: 500px;
+      height: 80%;
+      place-items: center;
+      grid-template-columns: repeat(5, minmax(auto, auto));
+      grid-template-rows: repeat(5, minmax(auto, 60px));
+      gap:2%;
+      background-color: #004AAD;
+      border-radius: 20px;
+      padding: 2%;
+      margin: 0 auto;
+    }
+
+    .box {
+      width: 27px;
+      height: 27px;
+      gap: 1px;
+      grid-template-rows: repeat(5, minmax(auto, 30px));
+    }
+
+    .box_filled {
+      width: 27px;
+      height: 27px;
+      gap: 1px;
+      grid-template-rows: repeat(5, minmax(auto, 30px));
+
+    }
+
+    .section-3{
+      margin-top: 10%;
+    }
+
+    .square2 {
+      font-size: 50%;
+
+    }
+
+    .my-button2 {
+      font-size: 8px;
+      width: 80%;
+      text-align: center;
+      padding: 4px;
+    }
+
+    .board4x4 {
+      display: grid;
+      width: 85%;
+      height: 80%;
+      padding: 1%;
+      margin: 0 auto;
+    }
+    
+    .box4x4 {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      
+    }
+    .box_filled4x4 {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+
+    }
+
+    .board3x3 {
+      width: 55%;
+    }
+
+    .box3x3 {
+      width: 38px;
+      height: 38px;
+    }
+  
+    .box_filled3x3 {
+  
+      width: 38px;
+      height: 38px;
+      }
+}
+

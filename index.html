@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div id="title">
+      <h1>Bingo</h1>
+    </div>
+    <div class="middle">
+      <p id="instructions">
+        Antes de empezar a jugar es necesario que completes el siguiente
+        formulario:
+      </p>
+      <form id="player-form">
+        <ul id="list">
+          <li>
+            <label for="name1">Nombre de Jugador 1:</label>
+            <input type="text" id="name1" />
+          </li>
+          <li>
+            <label for="name2">Nombre de Jugador 2:</label>
+            <input type="text" id="name2" />
+          </li>
+          <li>
+            <label for="name3">Nombre de Jugador 3:</label>
+            <input type="text" id="name3" />
+          </li>
+          <li>
+            <label for="name4">Nombre de Jugador 4:</label>
+            <input type="text" id="name4" />
+          </li>
+        </ul>
+      </form>
+      <div>Selecciona el tamaño de cartón con el que deseas jugar</div>
+      <div>(Al apretar el boton comenzará la partida)</div>
+      <div id="buttons">
+        <button class="menu_button" onclick="getNames3x3()">3x3</button>
+        <button class="menu_button" onclick="getNames4x4()">4x4</button>
+        <button class="menu_button" onclick="getNames5x5()">5x5</button>
+      </div>
+    </div>
+    <div class="bottom">
+      <h2>Record de victorias</h2>
+      <ol id="record">
+        <li>
+          Jugador ........................................................ 0
+        </li>
+        <li>
+          Jugador ........................................................ 0
+        </li>
+        <li>
+          Jugador ........................................................ 0
+        </li>
+        <li>
+          Jugador ........................................................ 0
+        </li>
+      </ol>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <section class="section-1">
+      <div id="section-1__left">
+        <h1 class="bigWord">Número</h1>
+        <div class="square">
+          <h1 id="indicator1"></h1>
+        </div>
+        <button onclick="numGenerate5x5()" class="my-button">
+          Nuevo número
+        </button>
+      </div>
+      <div id="section-1__center">
+        <h1 id="title">Bingo</h1>
+      </div>
+
+      <div id="section-1__right">
+        <h1 class="bigWord">Turno</h1>
+        <div class="square">
+          <h1 id="indicator2">0</h1>
+        </div>
+        <button onclick="location.reload()" class="my-button">
+          Nueva partida
+        </button>
+      </div>
+    </section>
+    <section class="section-2">
+      <div class="board" id="board1">
+        <div class="box" id="1"></div>
+        <div class="box" id="2"></div>
+        <div class="box" id="3"></div>
+        <div class="box" id="4"></div>
+        <div class="box" id="5"></div>
+        <div class="box" id="6"></div>
+        <div class="box" id="7"></div>
+        <div class="box" id="8"></div>
+        <div class="box" id="9"></div>
+        <div class="box" id="10"></div>
+        <div class="box" id="11"></div>
+        <div class="box" id="12"></div>
+        <div class="box" id="bonus_box">★</div>
+        <div class="box" id="14"></div>
+        <div class="box" id="15"></div>
+        <div class="box" id="16"></div>
+        <div class="box" id="17"></div>
+        <div class="box" id="18"></div>
+        <div class="box" id="19"></div>
+        <div class="box" id="20"></div>
+        <div class="box" id="21"></div>
+        <div class="box" id="22"></div>
+        <div class="box" id="23"></div>
+        <div class="box" id="24"></div>
+        <div class="box" id="25"></div>
+      </div>
+      <div class="board" id="board2">
+        <div class="box" id="1"></div>
+        <div class="box" id="2"></div>
+        <div class="box" id="3"></div>
+        <div class="box" id="4"></div>
+        <div class="box" id="5"></div>
+        <div class="box" id="6"></div>
+        <div class="box" id="7"></div>
+        <div class="box" id="8"></div>
+        <div class="box" id="9"></div>
+        <div class="box" id="10"></div>
+        <div class="box" id="11"></div>
+        <div class="box" id="12"></div>
+        <div class="box" id="bonus_box">★</div>
+        <div class="box" id="14"></div>
+        <div class="box" id="15"></div>
+        <div class="box" id="16"></div>
+        <div class="box" id="17"></div>
+        <div class="box" id="18"></div>
+        <div class="box" id="19"></div>
+        <div class="box" id="20"></div>
+        <div class="box" id="21"></div>
+        <div class="box" id="22"></div>
+        <div class="box" id="23"></div>
+        <div class="box" id="24"></div>
+        <div class="box" id="25"></div>
+      </div>
+      <div class="board" id="board3">
+        <div class="box" id="1"></div>
+        <div class="box" id="2"></div>
+        <div class="box" id="3"></div>
+        <div class="box" id="4"></div>
+        <div class="box" id="5"></div>
+        <div class="box" id="6"></div>
+        <div class="box" id="7"></div>
+        <div class="box" id="8"></div>
+        <div class="box" id="9"></div>
+        <div class="box" id="10"></div>
+        <div class="box" id="11"></div>
+        <div class="box" id="12"></div>
+        <div class="box" id="bonus_box">★</div>
+        <div class="box" id="14"></div>
+        <div class="box" id="15"></div>
+        <div class="box" id="16"></div>
+        <div class="box" id="17"></div>
+        <div class="box" id="18"></div>
+        <div class="box" id="19"></div>
+        <div class="box" id="20"></div>
+        <div class="box" id="21"></div>
+        <div class="box" id="22"></div>
+        <div class="box" id="23"></div>
+        <div class="box" id="24"></div>
+        <div class="box" id="25"></div>
+      </div>
+      <div class="board" id="board4">
+        <div class="box" id="1"></div>
+        <div class="box" id="2"></div>
+        <div class="box" id="3"></div>
+        <div class="box" id="4"></div>
+        <div class="box" id="5"></div>
+        <div class="box" id="6"></div>
+        <div class="box" id="7"></div>
+        <div class="box" id="8"></div>
+        <div class="box" id="9"></div>
+        <div class="box" id="10"></div>
+        <div class="box" id="11"></div>
+        <div class="box" id="12"></div>
+        <div class="box" id="bonus_box">★</div>
+        <div class="box" id="14"></div>
+        <div class="box" id="15"></div>
+        <div class="box" id="16"></div>
+        <div class="box" id="17"></div>
+        <div class="box" id="18"></div>
+        <div class="box" id="19"></div>
+        <div class="box" id="20"></div>
+        <div class="box" id="21"></div>
+        <div class="box" id="22"></div>
+        <div class="box" id="23"></div>
+        <div class="box" id="24"></div>
+        <div class="box" id="25"></div>
+      </div>
+      <div class="board" id="scoreboard">
+        <h1 id="subtitle">Puntuaciones</h1>
+        <h5 id="pts1">1.</h5>
+        <h5 id="pts2">2.</h5>
+        <h5 id="pts3">3.</h5>
+        <h5 id="pts4">4.</h5>
+      </div>
+    </section>
+    <section class="section-3">
+      <div class="square2" id="square1">
+        <h4 id="n1">Jugador 1</h4>
+        <h5 id="p1">0 pts</h5>
+        <button onclick="bingoCardview1()" class="my-button2">
+          Ver cartón
+        </button>
+      </div>
+
+      <div class="square2" id="square2">
+        <h4 id="n2">Jugador 2</h4>
+        <h5 id="p2">0 pts</h5>
+        <button onclick="bingoCardview2()" class="my-button2">
+          Ver cartón
+        </button>
+      </div>
+
+      <div class="square2" id="square3">
+        <h4 id="n3">Jugador 3</h4>
+        <h5 id="p3">0 pts</h5>
+        <button onclick="bingoCardview3()" class="my-button2">
+          Ver cartón
+        </button>
+      </div>
+
+      <div class="square2" id="square4">
+        <h4 id="n4">Jugador 4</h4>
+        <h5 id="p4">0 pts</h5>
+        <button onclick="bingoCardview4()" class="my-button2">
+          Ver cartón
+        </button>
+      </div>
+    </section>
+    <div id="bottom">
+      <a class="my-button" href="index.html">Menú principal</a>
+    </div>
+    <script src="5x5.js"></script>
+  </body>
+</html>
