@@ -63,20 +63,31 @@ function getOrCreateDictionary() {
     return JSON.parse(victories);
 }
 
-function record(){
-    dictionary=getOrCreateDictionary();
-    const list = document.getElementById('record');
-    const items = list.getElementsByTagName('li');
 
-    const keys = Object.keys(dictionary);
-    if (keys.length > 0) {
-    for (let i = 0; i < items.length && i < keys.length; i++) {
-        const key = keys[i];
-        const value = dictionary[key];
-        items[i].textContent = `${key}: ${value} victorias`;
+function orderDictionaryByValuesAndReplaceText(dict, liElements) {
+
+    const sortedDict = Object.entries(dict).sort((a, b) => b[1] - a[1]);
+  
+    
+    for (let i = 0; i < Math.min(4, sortedDict.length); i++) {
+      liElements[i].textContent = `${sortedDict[i][0]}: ${sortedDict[i][1]} victorias`;
     }
-    } else {
-    console.error('The dictionary is empty');
+  
+    for (let i = Math.min(4, sortedDict.length); i < liElements.length; i++) {
+      liElements[i].textContent = '';
     }
+  }
+
+function record(){
+    dict=getOrCreateDictionary();
+
+    const ol = document.getElementById('record');
+    const liElements = ol.getElementsByTagName('li');
+
+
+    orderDictionaryByValuesAndReplaceText(dict, liElements);
 }
+
 record();
+
+
